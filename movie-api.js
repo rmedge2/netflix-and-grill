@@ -8,7 +8,19 @@ const options = {
 	}
 };
 
-fetch('https://moviesdatabase.p.rapidapi.com/titles/x/titles-by-ids?idsList=tt0001702%2Ctt0001856%2Ctt0001856', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
+
+// function getGenre()
+fetch('https://moviesdatabase.p.rapidapi.com/titles/utils/genres', options)
+	.then(response => {
+		console.log(response.status)
+		return response.json()})
+	.then(response =>{
+
+	console.log(response.results[1])
+	
+	// console.log(re[1])
+	})
 	.catch(err => console.error(err));
+
+
+	// getting movies by genre
