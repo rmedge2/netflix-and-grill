@@ -26,31 +26,29 @@ header {
 
 .movie-card {
   width: 250px;
-    height: 250px;
-    border: 7px solid white;
-    padding: 50px;
-    margin: 10px;
-    background-color: #8D3B72;
-    opacity: 0.9;
+  height: 250px;
+  border: 7px solid white;
+  padding: 50px;
+  margin: 10px;
+  background-color: #8d3b72;
+  opacity: 0.9;
 }
 
 .recipe-card {
   width: 250px;
-    height: 250px;
-    border: 7px solid white;
-    padding: 50px;
-    margin: 10px;
-    background-color: #8D3B72;
-    opacity: 0.9;
+  height: 250px;
+  border: 7px solid white;
+  padding: 50px;
+  margin: 10px;
+  background-color: #8d3b72;
+  opacity: 0.9;
 }
 .btn-food-group {
-background-color: 
-  border: 1px solid green; 
-  color: white; 
-  cursor: pointer; 
-  width: 100%; 
-  display: flex; 
-  flex-direction: column 
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .btn-container {
   display: flex;
@@ -58,8 +56,15 @@ background-color:
 }
 
 button {
-    border-radius: 20%;
-    margin-bottom: 25px;
+  border-radius: 20%;
+  margin-bottom: 25px;
+}
+
+.heart {
+  font-size: 400px;
+  color: red;
+  display: flex;
+  justify-content: center;
 }
 
 #movies-head {
@@ -71,17 +76,17 @@ button {
 }
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .section-body {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 footer {
-    background-color: crimson;
-    text-align: center;
-}  
+  background-color: crimson;
+  text-align: center;
+}
