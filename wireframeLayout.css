@@ -1,0 +1,81 @@
+main {
+  border-color: black;
+  display: flex;
+  justify-content: center;
+  background-image: url(red-candles.jpg);
+  opacity: 0.9;
+  background-size: 200px 200px;
+  margin: 0;
+}
+
+header {
+  background-color: lightcoral;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 50px;
+  width: 1136px;
+  max-width: 100%;
+}
+
+.div-container {
+  border-color: black;
+  border: 10px;
+}
+
+.movie-cat-card {
+  width: 250px;
+  height: 250px;
+  border: 10px solid white;
+  padding: 50px;
+  margin: 10px;
+  background-color: #8D3B72;
+  opacity: 0.9;
+}
+
+.movie-card {
+  width: 250px;
+  height: 250px;
+  border: 10px solid white;
+  padding: 50px;
+  margin: 10px;
+  background: white;
+  opacity: 0.9;
+}
+
+.recipe-card {
+  width: 250px;
+  height: 250px;
+  border: 10px solid white;
+  padding: 50px;
+  margin: 10px;
+  background: white;
+  opacity: 0.9;
+}
+button {
+  text-align: center;
+}
+
+#movies-head {
+  text-align: center;
+}
+
+#recipes-head {
+  text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.section-body {
+    padding: 20px 0;
+}
+
+footer {
+    background-color: crimson;
+    text-align: center;
+}  
