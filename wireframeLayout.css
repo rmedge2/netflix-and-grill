@@ -2,6 +2,7 @@ main {
   border-color: black;
   display: flex;
   justify-content: center;
+  justify-content: space-evenly;
   background-image: url(red-candles.jpg);
   opacity: 0.9;
   background-size: 200px 200px;
@@ -23,37 +24,42 @@ header {
   border: 10px;
 }
 
-.movie-cat-card {
-  width: 250px;
-  height: 250px;
-  border: 10px solid white;
-  padding: 50px;
-  margin: 10px;
-  background-color: #8D3B72;
-  opacity: 0.9;
-}
-
 .movie-card {
   width: 250px;
-  height: 250px;
-  border: 10px solid white;
-  padding: 50px;
-  margin: 10px;
-  background: white;
-  opacity: 0.9;
+    height: 250px;
+    border: 7px solid white;
+    padding: 50px;
+    margin: 10px;
+    background-color: #8D3B72;
+    opacity: 0.9;
 }
 
 .recipe-card {
   width: 250px;
-  height: 250px;
-  border: 10px solid white;
-  padding: 50px;
-  margin: 10px;
-  background: white;
-  opacity: 0.9;
+    height: 250px;
+    border: 7px solid white;
+    padding: 50px;
+    margin: 10px;
+    background-color: #8D3B72;
+    opacity: 0.9;
 }
+.btn-food-group {
+background-color: 
+  border: 1px solid green; 
+  color: white; 
+  cursor: pointer; 
+  width: 100%; 
+  display: flex; 
+  flex-direction: column 
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
 button {
-  text-align: center;
+    border-radius: 20%;
+    margin-bottom: 25px;
 }
 
 #movies-head {
