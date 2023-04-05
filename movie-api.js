@@ -8,19 +8,14 @@ const options = {
 	}
 };
 
-
-// function getGenre()
-fetch('https://moviesdatabase.p.rapidapi.com/titles/utils/genres', options)
+fetch(`https://moviesdatabase.p.rapidapi.com/titles?genre=Action&list=top_boxoffice_200&sort=year.decr&limit=50`, options)
+	.then(response => response.json())
 	.then(response => {
-		console.log(response.status)
-		return response.json()})
-	.then(response =>{
-
-	console.log(response.results[1])
-	
-	// console.log(re[1])
-	})
+		console.log(response.results[0])})
 	.catch(err => console.error(err));
 
-
 	// getting movies by genre
+
+function displayMovieOptions(x){
+	
+}
