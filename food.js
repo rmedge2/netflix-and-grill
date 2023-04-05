@@ -6,8 +6,8 @@ const options = {
     },
 };
 
-// let posts = document.querySelector("#posts");
-let posts = document.querySelector('.column-recipes')
+let posts = document.querySelector("#posts");
+// let posts = document.querySelector('.column-recipes')
 let region = "";
 
 let setChinese = () => {
@@ -25,18 +25,29 @@ let setAfrican = () => {
 let gen = document.querySelector('#gen')
 
 gen.addEventListener('click', () => {
-    fetch(`https://tasty.p.rapidapi.com/recipes/list?from=0&size=3&tags=${region}`, options)
+    fetch(`https://tasty.p.rapidapi.com/recipes/list?from=0&size=25&tags=${region}`, options)
         .then((response) => response.json())
         .then((data) => {
-            data.results.forEach((result) => {
-                console.log(result);
-                let name = result.name;
+            for (i = 0; i >= 3; i++){
+                let r = Math.floor(Math.random() * 12)
+                let item = data.results[r]
+                console.log(item)
+                let name = item.name;
                 let recipeHTML = `<h3 id="name">${name}</h3>
-                <a href='https://tasty.co/recipe/${result.slug}'><img src="${result.thumbnail_url}" alt="" height='200px'>`;
+                <a href='https://tasty.co/recipe/${item.slug}'><img src="${item.thumbnail_url}" alt="" height='200px'>`;
                 let sec = document.createElement("section");
                 sec.innerHTML = recipeHTML;
                 posts.append(sec);
-            });
+            }
+            // data.results[i].forEach((result) => {
+            //     console.log(result);
+            //     let name = result.name;
+            //     let recipeHTML = `<h3 id="name">${name}</h3>
+            //     <a href='https://tasty.co/recipe/${result.slug}'><img src="${result.thumbnail_url}" alt="" height='200px'>`;
+            //     let sec = document.createElement("section");
+            //     sec.innerHTML = recipeHTML;
+            //     posts.append(sec);
+            // });
         })
         .catch((err) => console.error(err));
 }, {once : true}
