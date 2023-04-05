@@ -1,44 +1,27 @@
 main {
+  border-color: black;
   display: flex;
+  justify-content: center;
   justify-content: space-evenly;
   background-image: url(red-candles.jpg);
+  opacity: 0.9;
   background-size: 200px 200px;
-  border-radius: 20px;
+  margin: 0;
 }
 
 header {
-  display: flex;
-  /* background-color: lightcoral; */
+  background-color: lightcoral;
   box-sizing: border-box;
   margin: 0 auto;
+  position: relative;
+  padding: 0 50px;
   width: 1136px;
   max-width: 100%;
-  justify-content: center;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-}
-
-h1 {
-    color: #E50914
-}
-nav ul {
-  display: flex;
-  list-style-type: none;
-}
-
-nav ul li {
-  margin: 0 10px;
-}
-
-nav ul li a {
-  color: #000;
-  text-decoration: none;
-  list-style-type: none;
 }
 
 .div-container {
-  display: flex;
+  border-color: black;
+  border: 10px;
 }
 
 .movie-card {
@@ -58,10 +41,7 @@ nav ul li a {
   padding: 50px;
   margin: 10px;
   background-color: #8d3b72;
-
-  /* opacity: 0.9; */
-  margin-left: 20%;
-
+  opacity: 0.9;
 }
 .btn-food-group {
   color: white;
@@ -78,6 +58,13 @@ nav ul li a {
 button {
   border-radius: 20%;
   margin-bottom: 25px;
+}
+
+.heart {
+  font-size: 400px;
+  color: red;
+  display: flex;
+  justify-content: center;
 }
 
 #movies-head {
