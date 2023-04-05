@@ -1,47 +1,72 @@
+body {
+  background-color: black;
+  font-family: "Bebas Neue", sans-serif;
+}
+
 main {
-  border-color: black;
   display: flex;
-  justify-content: center;
   justify-content: space-evenly;
   background-image: url(red-candles.jpg);
-  opacity: 0.9;
   background-size: 200px 200px;
-  margin: 0;
+  border-radius: 20px;
 }
 
 header {
-  background-color: lightcoral;
+  display: flex;
+  /* background-color: lightcoral; */
   box-sizing: border-box;
   margin: 0 auto;
-  position: relative;
-  padding: 0 50px;
   width: 1136px;
   max-width: 100%;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px #e50914;
+  background-color: black;
+}
+
+h1 {
+  color: #e50914;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .div-container {
-  border-color: black;
-  border: 10px;
+  display: flex;
 }
 
 .movie-card {
   width: 250px;
   height: 250px;
-  border: 7px solid white;
+  border: 7px solid black;
   padding: 50px;
   margin: 10px;
-  background-color: #8d3b72;
+  background-color: #e50914;
   opacity: 0.9;
 }
 
 .recipe-card {
   width: 250px;
   height: 250px;
-  border: 7px solid white;
+  border: 7px solid black;
   padding: 50px;
   margin: 10px;
-  background-color: #8d3b72;
-  opacity: 0.9;
+  background-color: #e50914;
+
+  /* opacity: 0.9; */
+  margin-left: 20%;
 }
 .btn-food-group {
   color: white;
@@ -54,17 +79,18 @@ header {
   display: flex;
   justify-content: center;
 }
+#generate-btn {
+  background-color: #e50914;
+  color: white;
+  margin-top: 15px;
+  font-family: "Bebas Neue", sans-serif;
+}
 
 button {
   border-radius: 20%;
   margin-bottom: 25px;
-}
-
-.heart {
-  font-size: 400px;
-  color: red;
-  display: flex;
-  justify-content: center;
+  background-color: white;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 #movies-head {
@@ -73,6 +99,11 @@ button {
 
 #recipes-head {
   text-align: center;
+}
+
+.reset-btn {
+  display: flex;
+  justify-content: center;
 }
 
 .row {
@@ -87,6 +118,6 @@ button {
 }
 
 footer {
-  background-color: crimson;
+  background-color: #e50914;
   text-align: center;
 }
