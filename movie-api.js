@@ -8,18 +8,10 @@ const options = {
 	}
 };
 
-
-// function getGenre()
-fetch('https://moviesdatabase.p.rapidapi.com/titles/utils/genres', options)
-	.then(response => {
-		console.log(response.status)
-		return response.json()})
-	.then(response =>{
-
-	console.log(response.results[1])
-	
-	// console.log(re[1])
-	})
+//will add string literal in place of genre
+fetch('https://moviesdatabase.p.rapidapi.com/titles?genre=drama&list=top_boxoffice_200', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
 	.catch(err => console.error(err));
 
 
