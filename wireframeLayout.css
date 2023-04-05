@@ -1,56 +1,72 @@
 main {
-  border-color: black;
   display: flex;
-  justify-content: center;
   justify-content: space-evenly;
   background-image: url(red-candles.jpg);
-  opacity: 0.9;
   background-size: 200px 200px;
-  margin: 0;
+  border-radius: 20px;
 }
 
 header {
-  background-color: lightcoral;
+  display: flex;
+  /* background-color: lightcoral; */
   box-sizing: border-box;
   margin: 0 auto;
-  position: relative;
-  padding: 0 50px;
   width: 1136px;
   max-width: 100%;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #E50914
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .div-container {
-  border-color: black;
-  border: 10px;
+  display: flex;
 }
 
 .movie-card {
   width: 250px;
-    height: 250px;
-    border: 7px solid white;
-    padding: 50px;
-    margin: 10px;
-    background-color: #8D3B72;
-    opacity: 0.9;
+  height: 250px;
+  border: 7px solid white;
+  padding: 50px;
+  margin: 10px;
+  background-color: #8d3b72;
+  opacity: 0.9;
 }
 
 .recipe-card {
   width: 250px;
-    height: 250px;
-    border: 7px solid white;
-    padding: 50px;
-    margin: 10px;
-    background-color: #8D3B72;
-    opacity: 0.9;
+  height: 250px;
+  border: 7px solid white;
+  padding: 50px;
+  margin: 10px;
+  background-color: #8d3b72;
+  /* opacity: 0.9; */
+  margin-left: 20%;
 }
 .btn-food-group {
-background-color: 
-  border: 1px solid green; 
-  color: white; 
-  cursor: pointer; 
-  width: 100%; 
-  display: flex; 
-  flex-direction: column 
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .btn-container {
   display: flex;
@@ -58,8 +74,8 @@ background-color:
 }
 
 button {
-    border-radius: 20%;
-    margin-bottom: 25px;
+  border-radius: 20%;
+  margin-bottom: 25px;
 }
 
 #movies-head {
@@ -71,17 +87,17 @@ button {
 }
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .section-body {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 footer {
-    background-color: crimson;
-    text-align: center;
-}  
+  background-color: crimson;
+  text-align: center;
+}
