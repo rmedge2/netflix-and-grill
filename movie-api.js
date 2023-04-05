@@ -19,13 +19,6 @@ let genreInput = document.getElementById('genreInput')
 
 	// getting movies by genre
 
-<<<<<<< HEAD
-//will add string literal in place of genre
-fetch('https://moviesdatabase.p.rapidapi.com/titles?genre=drama&list=top_boxoffice_200', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
-=======
 
 	genreForm.addEventListener('submit', (event)=>{
 		event.preventDefault()
@@ -33,7 +26,6 @@ fetch('https://moviesdatabase.p.rapidapi.com/titles?genre=drama&list=top_boxoffi
 		console.log(genre)
 		displayMovieOptions(genre)
 	})
->>>>>>> upstream/main
 
 	function displayMovieOptions(x){
 		const options = {
