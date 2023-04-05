@@ -32,9 +32,10 @@ function displayMovieOptions(x) {
 				let item = response.results[r]
 
 				let movieCard = document.createElement('div')
+				movieCard.classList.add('card-container')
 				movieCard.innerHTML = `
-				<div class="card" style="width: 18rem;">
-								<img src=${item.primaryImage.url}
+				<div class="card" style="width: 100%;">
+								<img src=${item.primaryImage.url} style='width: 100%;'
 								class="card-img-top" alt="...">
 								<div class="card-body">
 									<h5 class="card-title">${item.titleText.text}</h5>

@@ -11,6 +11,15 @@ img {
 }
 
 .card-body{
-    height: 190px;
-    width: 286px;
+    /* height: 190px;
+    width: 286px; */
+    height: 100%;
+    width: 100%;
 }
+
+.card-container{
+    height: auto;
+    width: 30%;
+}
+
+
