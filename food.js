@@ -6,8 +6,8 @@ const options = {
     },
 };
 
-let posts = document.querySelector("#posts");
-
+// let posts = document.querySelector("#posts");
+let posts = document.querySelector('.column-recipes')
 let region = "";
 
 let setChinese = () => {
