@@ -1,0 +1,16 @@
+img {
+    width: 286px;
+    height: 432px;
+}
+
+#moviesContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-body{
+    height: 190px;
+    width: 286px;
+}
