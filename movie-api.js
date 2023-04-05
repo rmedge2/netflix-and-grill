@@ -24,24 +24,29 @@ function displayMovieOptions(x) {
 	fetch(`https://moviesdatabase.p.rapidapi.com/titles?genre=${x}&list=top_boxoffice_200&sort=year.decr&limit=50`, options)
 		.then(response => response.json())
 		.then(response => {
-			console.log(response.results)
 			console.log(response.results[0].titleText.text)
 			console.log(response.results[0].primaryImage.url)
-			response.results.forEach(element => {
+
+			for(let i = 0; i < 3; i++){
+				let r = Math.round(Math.random()*50)
+				let item = response.results[r]
+
 				let movieCard = document.createElement('div')
 				movieCard.innerHTML = `
 				<div class="card" style="width: 18rem;">
-								<img src=${element.primaryImage.url}
+								<img src=${item.primaryImage.url}
 								class="card-img-top" alt="...">
 								<div class="card-body">
-									<h5 class="card-title">${element.titleText.text}</h5>
+									<h5 class="card-title">${item.titleText.text}</h5>
 									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 									<a href="#" class="btn btn-primary">Go somewhere</a>
 								</div>
 							</div>
 				`
 				moviesContainer.appendChild(movieCard)
-		})
+			}
+		
+		
 		// .catch(err => console.error(err));
 	})
 }
