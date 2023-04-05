@@ -1,26 +1,47 @@
 // movie api 
 
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '797577513fmsh416afd2e0137296p1dee25jsn6deba288b462',
-		'X-RapidAPI-Host': 'moviesdatabase.p.rapidapi.com'
-	}
-};
+let genreForm = document.querySelector('form')
+let genreInput = document.getElementById('genreInput')
 
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': '797577513fmsh416afd2e0137296p1dee25jsn6deba288b462',
+// 		'X-RapidAPI-Host': 'moviesdatabase.p.rapidapi.com'
+// 	}
+// };
 
-// function getGenre()
-fetch('https://moviesdatabase.p.rapidapi.com/titles/utils/genres', options)
-	.then(response => {
-		console.log(response.status)
-		return response.json()})
-	.then(response =>{
-
-	console.log(response.results[1])
-	
-	// console.log(re[1])
-	})
-	.catch(err => console.error(err));
-
+// fetch(`https://moviesdatabase.p.rapidapi.com/titles?genre=Action&list=top_boxoffice_200&sort=year.decr&limit=50`, options)
+// 	.then(response => response.json())
+// 	.then(response => {
+// 		console.log(response.results[0])})
+// 	.catch(err => console.error(err));
 
 	// getting movies by genre
+
+
+	genreForm.addEventListener('submit', (event)=>{
+		event.preventDefault()
+		let genre = genreInput.value
+		console.log(genre)
+		displayMovieOptions(genre)
+	})
+
+	function displayMovieOptions(x){
+		const options = {
+			method: 'GET',
+			headers: {
+				'X-RapidAPI-Key': '797577513fmsh416afd2e0137296p1dee25jsn6deba288b462',
+				'X-RapidAPI-Host': 'moviesdatabase.p.rapidapi.com'
+			}
+		};
+		
+		fetch(`https://moviesdatabase.p.rapidapi.com/titles?genre=${x}&list=top_boxoffice_200&sort=year.decr&limit=50`, options)
+			.then(response => response.json())
+			.then(response => {
+				console.log(response.results[0])})
+			.catch(err => console.error(err));
+		
+	}
+// displayMovieOptions()
+
