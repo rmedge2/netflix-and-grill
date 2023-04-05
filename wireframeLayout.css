@@ -10,10 +10,13 @@ main {
   background-size: 200px 200px;
   border-radius: 20px;
 }
+#logo {
+    font-size: 4em;
+    font-family: "Bebas Neue", sans-serif;
+}
 
 header {
   display: flex;
-  /* background-color: lightcoral; */
   box-sizing: border-box;
   margin: 0 auto;
   width: 1136px;
@@ -64,8 +67,6 @@ nav ul li a {
   padding: 50px;
   margin: 10px;
   background-color: #e50914;
-
-  /* opacity: 0.9; */
   margin-left: 20%;
 }
 .btn-food-group {
@@ -82,15 +83,22 @@ nav ul li a {
 #generate-btn {
   background-color: #e50914;
   color: white;
+  padding: 0px 32px;
+  font-size: 35px;
+  cursor: pointer;
   margin-top: 15px;
-  font-family: "Bebas Neue", sans-serif;
+  border-radius: 0%;
 }
 
 button {
   border-radius: 20%;
   margin-bottom: 25px;
-  background-color: white;
   font-family: "Bebas Neue", sans-serif;
+}
+.columns-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 #movies-head {
@@ -101,16 +109,18 @@ button {
   text-align: center;
 }
 
-.reset-btn {
+#reset-btn-container {
   display: flex;
   justify-content: center;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+#reset-btn {
+  background-color: #e50914;
+  color: white;
+  padding: 0px 32px;
+  font-size: 35px;
+  cursor: pointer;
+  border-radius: 0%;
 }
 
 .section-body {
