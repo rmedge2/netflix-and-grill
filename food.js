@@ -86,7 +86,7 @@ function displayMovieOptions(x) {
 								<div class="card-body">
 									<h5 class="card-title">${item.titleText.text}</h5>
 									<p class="card-text"></p>
-									<a href="https://www.imdb.com/title/${item.id}/" class="btn">Movie link</a>
+									<a href="https://www.imdb.com/title/${item.id}/" target="_blank" class="btn">Movie link</a>
 								</div>
 							</div>
 				`
@@ -120,7 +120,7 @@ gen.addEventListener(
                             <img class="card-img-top " src="${item.thumbnail_url}" alt="Card image cap" style='width: 18rem;'>
                             <div class="card-body">
                                 <h5 class="card-title">${name}</h5>
-                                <a href="https://tasty.co/recipe/${item.slug}" class="btn btn-danger">Go to Recipe</a>
+                                <a href="https://tasty.co/recipe/${item.slug}" target="_blank" class="btn btn-danger">Go to Recipe</a>
                             </div>
                         </div>`;
                     let sec = document.createElement("div");
