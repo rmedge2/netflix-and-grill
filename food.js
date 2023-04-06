@@ -32,8 +32,8 @@ let setIndian = () => {
 }
 // setting my genre regions
 let genreRegion = ''
-let setHorror = () => {
-    return (genreRegion = 'Horror')
+let setFantasy = () => {
+    return (genreRegion = 'Fantasy')
 }
 let setComedy = () => {
     return (genreRegion = 'Comedy')
