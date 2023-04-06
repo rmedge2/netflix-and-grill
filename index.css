@@ -92,7 +92,7 @@ body {
     justify-content: center;
   }
   button:active {
-    color: #e50914;
+    background-color: #e50914;
   }
   #generate-btn {
     background-color: #e50914;
