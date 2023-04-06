@@ -5,7 +5,10 @@ const options = {
         "X-RapidAPI-Host": "tasty.p.rapidapi.com",
     },
 };
-
+let reset = document.querySelector('#reset-btn')
+reset.addEventListener('click', () => {
+    location.reload()
+})
 // let posts = document.querySelector("#posts");
 let posts = document.querySelector(".recipes-cat-container");
 let region = "";
