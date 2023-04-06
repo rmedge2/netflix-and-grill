@@ -77,12 +77,12 @@ function displayMovieOptions(x) {
 				let movieCard = document.createElement('div')
 				movieCard.classList.add('card-container')
 				movieCard.innerHTML = `
-				<div class="card" style="width: 100%;">
+				<div class="card text-white bg-dark" style="width: 100%;" >
 								<img src=${item.primaryImage.url} style='width: 18rem;'
 								class="card-img-top" alt="...">
 								<div class="card-body">
 									<h5 class="card-title">${item.titleText.text}</h5>
-									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<p class="card-text"></p>
 									<a href="https://www.imdb.com/title/${item.id}/" class="btn">Movie link</a>
 								</div>
 							</div>
@@ -113,8 +113,8 @@ gen.addEventListener(
                     let item = data.results[r];
                     let name = item.name;
                     let recipeCARD = `
-                        <div class="card text-white bg-dark">
-                            <img class="card-img-top " src="${item.thumbnail_url}" alt="Card image cap" height='150px'>
+                        <div class="card text-white bg-dark" style="width: 100%;">
+                            <img class="card-img-top " src="${item.thumbnail_url}" alt="Card image cap" style='height: 18rem;'>
                             <div class="card-body">
                                 <h5 class="card-title">${name}</h5>
                                 <a href="https://tasty.co/recipe/${item.slug}" class="btn btn-danger">Go to Recipe</a>
