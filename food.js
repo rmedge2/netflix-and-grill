@@ -117,7 +117,7 @@ gen.addEventListener(
                     let name = item.name;
                     let recipeCARD = `
                         <div class="card text-white bg-dark" style="width: 100%;">
-                            <img class="card-img-top " src="${item.thumbnail_url}" alt="Card image cap" style='height: 18rem;'>
+                            <img class="card-img-top " src="${item.thumbnail_url}" alt="Card image cap" style='width: 18rem;'>
                             <div class="card-body">
                                 <h5 class="card-title">${name}</h5>
                                 <a href="https://tasty.co/recipe/${item.slug}" class="btn btn-danger">Go to Recipe</a>
