@@ -6,8 +6,8 @@ const options = {
     },
 };
 
-// let posts = document.querySelector("#posts");
-let posts = document.querySelector(".section-body");
+let posts = document.querySelector("#posts");
+// let posts = document.querySelector(".section-body");
 let region = "";
 
 let setChinese = () => {
@@ -18,16 +18,16 @@ let setMexican = () => {
     return (region = "mexican");
 };
 
-let setAfrican = () => {
-    return (region = "african");
+let setItalian = () => {
+    return (region = "italian");
 };
 //
-let gen = document.querySelector("#generate-btn");
+let gen = document.querySelector("#gen");
 
 gen.addEventListener(
     "click",
     () => {
-        fetch(`https://tasty.p.rapidapi.com/recipes/list?from=0&size=30&tags=${region}`, options)
+        fetch(`https://tasty.p.rapidapi.com/recipes/list?from=0&size=40&tags=${region}`, options)
             .then((response) => response.json())
             .then((data) => {
                 console.log(data);
