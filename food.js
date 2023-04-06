@@ -21,7 +21,15 @@ let setMexican = () => {
 let setItalian = () => {
     return (region = "italian");
 };
-
+let setAmerican = () => {
+    return (region = "fusion");
+}
+let setMiddleEastern = ()=> {
+    return (region = "middle_eastern");
+}
+let setIndian = () => {
+    return (region = "indian");
+}
 // setting my genre regions
 let genreRegion = ''
 let setHorror = () => {
@@ -104,12 +112,9 @@ gen.addEventListener(
                     let r = Math.floor(Math.random() * 40);
                     let item = data.results[r];
                     let name = item.name;
-                    let recipeHTML = `
-                    <h3 id="name">${name}</h3>
-                    <a href='https://tasty.co/recipe/${item.slug}'><img src="${item.thumbnail_url}" alt="" height='200px'>`;
                     let recipeCARD = `
                         <div class="card text-white bg-dark">
-                            <img class="card-img-top " src="${item.thumbnail_url}" alt="Card image cap" height='200px'>
+                            <img class="card-img-top " src="${item.thumbnail_url}" alt="Card image cap" height='150px'>
                             <div class="card-body">
                                 <h5 class="card-title">${name}</h5>
                                 <a href="https://tasty.co/recipe/${item.slug}" class="btn btn-danger">Go to Recipe</a>
@@ -119,15 +124,6 @@ gen.addEventListener(
                     sec.innerHTML = recipeCARD;
                     posts.append(sec);
                 }
-                // data.results[i].forEach((result) => {
-                //     console.log(result);
-                //     let name = result.name;
-                //     let recipeHTML = `<h3 id="name">${name}</h3>
-                //     <a href='https://tasty.co/recipe/${result.slug}'><img src="${result.thumbnail_url}" alt="" height='200px'>`;
-                //     let sec = document.createElement("section");
-                //     sec.innerHTML = recipeHTML;
-                //     posts.append(sec);
-                // });
             })
             .catch((err) => console.error(err));
             
