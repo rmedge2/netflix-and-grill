@@ -32,25 +32,26 @@ function displayMovieOptions(x) {
 			console.log(response.results[0].primaryImage.url)
 
 			for(let i = 0; i < 3; i++){
-				let r = Math.round(Math.random()*50)
+				let r = Math.round(Math.random()*response.results.length)
 				let item = response.results[r]
+				console.log(item)
 
-				let movieCard = document.createElement('div')
-				movieCard.classList.add('card-container')
-				movieCard.innerHTML = `
-				<div class="card" style="width: 100%;">
-								<img src=${item.primaryImage.url} style='width: 100%;'
-								class="card-img-top" alt="...">
-								<div class="card-body">
-									<h5 class="card-title">${item.titleText.text}</h5>
-									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-									<a href="#" class="btn btn-primary">Movie link</a>
-								</div>
-							</div>
-				`
-				let movieID = item.id
-				console.log(movieID)
-				moviesContainer.appendChild(movieCard)
+				// let movieCard = document.createElement('div')
+				// movieCard.classList.add('card-container')
+				// movieCard.innerHTML = `
+				// <div class="card" style="width: 100%;">
+				// 				<img src=${item.primaryImage.url} style='width: 100%;'
+				// 				class="card-img-top" alt="...">
+				// 				<div class="card-body">
+				// 					<h5 class="card-title">${item.titleText.text}</h5>
+				// 					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				// 					<a href="#" class="btn btn-primary">Movie link</a>
+				// 				</div>
+				// 			</div>
+				// `
+				// let movieID = item.id
+				// console.log(movieID)
+				// moviesContainer.appendChild(movieCard)
 			}
 		
 		

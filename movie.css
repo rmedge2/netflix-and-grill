@@ -3,23 +3,28 @@ img {
     height: 432px;
 }
 
-#moviesContainer{
+#movies-Container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .card-body{
-    /* height: 190px;
-    width: 286px; */
-    height: 100%;
-    width: 100%;
+    height: 190px;
+    width: 286px;
+    /* height: 100%;
+    width: 100%; */
 }
 
-.card-container{
+.btn{
+    background-color: #e50914;
+    color: white;
+}
+
+/* .card-container{
     height: auto;
     width: 30%;
-}
+} */
 
 
