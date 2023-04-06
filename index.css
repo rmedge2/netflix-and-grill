@@ -149,7 +149,9 @@ body {
   .section-body {
     padding: 20px 0;
   }
-  
+  .ss-container {
+    display: flex;
+  }
   footer {
     background-color: #e50914;
     text-align: center;
