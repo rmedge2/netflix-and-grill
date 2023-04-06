@@ -5,12 +5,15 @@ let genreInput = document.getElementById('genreInput')
 let moviesContainer = document.getElementById('moviesContainer')
 let movieCard = document.querySelector('.movieCard')
 
+let gen = document.querySelector('#generate-btn')
+
 genreForm.addEventListener('submit', (event) => {
 	event.preventDefault()
 	let genre = genreInput.value
 	console.log(genre)
 	displayMovieOptions(genre)
 })
+
 
 function displayMovieOptions(x) {
 	const options = {
@@ -24,6 +27,7 @@ function displayMovieOptions(x) {
 	fetch(`https://moviesdatabase.p.rapidapi.com/titles?genre=${x}&list=top_boxoffice_200&sort=year.decr&limit=50`, options)
 		.then(response => response.json())
 		.then(response => {
+			// console.log(response.results[0].id)
 			console.log(response.results[0].titleText.text)
 			console.log(response.results[0].primaryImage.url)
 
@@ -40,10 +44,12 @@ function displayMovieOptions(x) {
 								<div class="card-body">
 									<h5 class="card-title">${item.titleText.text}</h5>
 									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-									<a href="#" class="btn btn-primary">Go somewhere</a>
+									<a href="#" class="btn btn-primary">Movie link</a>
 								</div>
 							</div>
 				`
+				let movieID = item.id
+				console.log(movieID)
 				moviesContainer.appendChild(movieCard)
 			}
 		

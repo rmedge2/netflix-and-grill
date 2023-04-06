@@ -27,6 +27,7 @@ let gen = document.querySelector("#generate-btn");
 gen.addEventListener(
     "click",
     () => {
+        
         fetch(`https://tasty.p.rapidapi.com/recipes/list?from=0&size=40&tags=${region}`, options)
             .then((response) => response.json())
             .then((data) => {
