@@ -149,6 +149,11 @@ body {
     border-radius: 0%;
   }
   
+.card-img-top {
+    width: 286px;
+    height: 400px;
+}
+
   
   .section-body {
     padding: 20px 0;
