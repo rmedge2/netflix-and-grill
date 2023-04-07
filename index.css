@@ -121,6 +121,9 @@ body {
   #movies-container {
     margin: 10px;
   }
+  #movie-head{
+    text-align: center;
+  }
   #recipes-container {
     margin: 10px;
   }
