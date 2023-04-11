@@ -102,7 +102,7 @@ function displayMovieOptions(x) {
             <div class="card-body">
             <h5 class="card-title">${item.titleText.text}</h5>
             <p class="card-text"></p>
-            <a href="https://www.imdb.com/title/${item.id}/" target="_blank" class="btn">Movie link</a>
+            <a href="https://www.imdb.com/title/${item.id}/" target="_blank" class="btn">Movie Preview</a>
             </div>
             </div>
             `
