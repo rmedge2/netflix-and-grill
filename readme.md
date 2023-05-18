@@ -5,6 +5,7 @@ Netflix & Grill is a date night idea. The premis of the date includes a couple t
 
 This application allows you to select a type of cuisine, and then select a genre for movies. The app will then generate 3 recipe options (with links to the recipes) alongside 3 movie options (with links to the movie previews). If you want to select new options, just press reset, and you can start again.
 
+# Tools and Resources Used
 The app was built using the following:
 - HTML
 - CSS
