@@ -17,7 +17,7 @@ The app was built using the following:
 
 ## Authors
 
-- [Natiniel Worku](https://github.com/nworku00)
+- [Natinael Worku](https://github.com/nworku00)
 - [Aaliyah Russel](https://github.com/Azrussell)
 - [Gerald Pinkins Jr](https://github.com/GeraldPinkinsJr)
 - [Rodney Edge Jr](https://github.com/rmedge2)
